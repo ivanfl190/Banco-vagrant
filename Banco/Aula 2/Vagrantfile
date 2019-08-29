@@ -7,4 +7,5 @@ Vagrant.configure("2") do |config|
 	SHELL
 	end
 end
-#criaçao de usuario
+#criaçao de usuario, aplicar nesse script.
+
