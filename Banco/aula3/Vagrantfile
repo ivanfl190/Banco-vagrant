@@ -1,0 +1,6 @@
+Vagrant.configure("2") do |config|
+	config.vm.box = "ubuntu/trusty64"
+	config.vm.define "desktop" do |desktop|
+	config.vm.provision :shell, path: "update3.sh"
+	end
+end
