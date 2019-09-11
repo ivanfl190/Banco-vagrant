@@ -4,8 +4,7 @@ Vagrant.configure("2") do |config|
 	config.vm.provision :shell, inline: <<-SHELL
 	 sudo yum -y update
 	 sudo yum -y install postgresql postgresql-contrib
+	 sudo adduser aluno 
 	SHELL
 	end
 end
-#criaçao de usuario, aplicar nesse script.
-
