@@ -11,3 +11,4 @@ Vagrant.configure("2") do |config|
 	SHELL
 	end
 end
+# User aluno adicionar sem senha (verificar), comando para modificar senha do postgres
