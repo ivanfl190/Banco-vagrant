@@ -3,8 +3,11 @@ Vagrant.configure("2") do |config|
 	config.vm.define "desktop" do |desktop|
 	config.vm.provision :shell, inline: <<-SHELL
 	 sudo yum -y update
-	 sudo yum -y install postgresql postgresql-contrib
+	 sudo yum -y install postgresql-server postgresql-contrib
+	 sudo postgresql-setup initdb
+	 sudo systemctl start postgresql
+	 sudo systemctl enable postgresql
+	 puts :sudo passwd postgres "12345678"
 	SHELL
 	end
 end
-#aplicar usuario e criar o banco de dados via script para ser iniciado junto com o script*
