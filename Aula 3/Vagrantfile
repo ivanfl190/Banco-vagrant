@@ -6,5 +6,6 @@ Vagrant.configure("2") do |config|
 	 desktop.trigger.after :up do |trigger|
       trigger.info = "Starting script"
       trigger.run = {path: "bscript.sh"}
+	  end
 	end
 end
