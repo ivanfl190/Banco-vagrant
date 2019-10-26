@@ -8,16 +8,3 @@ sudo yum -y install postgresql96-server postgresql96-contrib
 sudo /usr/pgsql-9.6/bin/postgresql96-setup initdb
 sudo systemctl start postgresql-9.6
 sudo systemctl enable postgresql-9.6
-sudo chmod -R 777 /home/vagrant
-sudo -u postgres psql postgres 
-sudo -u postgres createuser vagrant
-sudo -u postgres createuser root
-sudo su postgres
-createdb mydb
-psql mydb
-
-#sudo su --shell /bin/bash postgres
-#sudo su postgres psql
-
-
-
