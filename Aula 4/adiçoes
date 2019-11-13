@@ -1,6 +1,0 @@
-   15  psql -h 127.0.0.1  -p 5432  -U postgres -w
-
-
-pg_hba.conf trust metodo de autenticaçao  colocar trust 
-vagrant( fazer trocar o arquivo citado acima por um que tenha trust) 
-Apos a configuraçao do hba.conf deve se dar restart no serviço postgres.

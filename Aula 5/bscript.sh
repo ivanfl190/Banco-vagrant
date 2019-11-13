@@ -5,9 +5,9 @@ sudo -u postgres createuser root
 sleep 2
 break 
 
-sudo passwd postgres '12345678'
+sudo passwd postgres
 
 sleep 2
 su - postgres
 
-
+createdb areas
